@@ -1,9 +1,15 @@
-import Button from './components/common/button';
+import Input from './components/common/input';
 
 export default function Home() {
   return (
     <>
-      <Button label="시작하기" />
+      <Input
+        label="이메일"
+        type="email"
+        name="email"
+        placeholder="이메일을 입력하세요"
+        isLabelShow
+      />
     </>
   );
 }
