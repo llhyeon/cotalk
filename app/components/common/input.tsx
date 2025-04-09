@@ -14,17 +14,16 @@ export default function Input({
 }: InputProps) {
   const id = useId();
   return (
-    <div className="flex flex-col gap-0.5 text-[14px]">
+    <div className={tm('flex flex-col gap-0.5 text-[14px]', className)}>
       <label htmlFor={id} className={tm('ml-2', !isLabelShow ? 'sr-only' : '')}>
         {label}
       </label>
       <input
         id={id}
         className={tm(
-          'border border-primary rounded-lg w-full py-3.5 px-2.5 min-w-[150px] text-primary placeholder:text-primary/70',
+          'border border-primary rounded-lg py-3.5 px-2.5 min-w-[150px] text-primary placeholder:text-primary/70',
           className
         )}
-        type="text"
         {...restProps}
       />
     </div>
