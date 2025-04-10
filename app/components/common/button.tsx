@@ -1,6 +1,5 @@
 import { tm } from '@/app/utils/tm/tw-merge';
 import Link from 'next/link';
-import { SetStateAction } from 'react';
 
 type ButtonProps = {
   className?: string;
