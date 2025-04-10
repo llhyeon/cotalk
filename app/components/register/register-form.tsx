@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Button from '../common/button';
 import Input from '../common/input';
 import ProfileModal from './profile-modal';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 export default function RegisterForm() {
   const [isModalOpen, setIsModalOpen] = useState(false);
