@@ -1,5 +1,4 @@
 import Logo from '../components/common/logo';
-import MotionDiv from '../components/common/motion-div';
 
 type LoginLayoutProps = {
   children: React.ReactNode;
@@ -7,13 +6,11 @@ type LoginLayoutProps = {
 
 export default function LoginLayout({ children }: LoginLayoutProps) {
   return (
-    <MotionDiv>
-      <section className="px-10 ">
-        <div className="flex justify-center mt-20">
-          <Logo width={267} height={267} />
-        </div>
-        {children}
-      </section>
-    </MotionDiv>
+    <section className="px-10">
+      <div className="flex justify-center mt-20">
+        <Logo width={267} height={267} />
+      </div>
+      {children}
+    </section>
   );
 }
