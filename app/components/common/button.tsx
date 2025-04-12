@@ -21,7 +21,7 @@ export default function Button({
       onClick={onClick}
       type={type}
       className={tm(
-        'w-full bg-primary text-white py-[14px] rounded-lg min-w-[100px] sm:text-xl sm:py-[24px]',
+        'w-full bg-primary text-white py-[14px] rounded-lg min-w-[60px] sm:text-xl sm:py-[24px] max-xs:text-sm max-xs:py-[16px]',
         className
       )}
     >
@@ -30,7 +30,7 @@ export default function Button({
   ) : (
     <Link
       className={tm(
-        'block text-center w-full bg-primary text-white py-[17.5px] rounded-lg min-w-[100px] sm:text-xl sm:py-[24px]',
+        'block text-center w-full bg-primary text-white py-[17.5px] rounded-lg min-w-[60px] sm:text-xl sm:py-[24px]',
         className
       )}
       href={href}

@@ -21,7 +21,7 @@ export default function RegisterForm() {
             placeholder="8글자 이상"
             isLabelShow
           />
-          <Button className="w-auto">중복확인</Button>
+          <Button className="w-auto px-4">중복확인</Button>
         </div>
         <Input
           label="이메일"
@@ -44,10 +44,14 @@ export default function RegisterForm() {
           placeholder="같은 비밀번호를 입력하세요"
           isLabelShow
         />
-        <Button onClick={() => setIsModalOpen(true)}>프로필 선택</Button>
-        <Button className="mt-12" type="submit">
-          회원가입
-        </Button>
+        <button
+          type="button"
+          className="my-4 border border-primary rounded-full text-primary py-1 mx-10 text-base"
+          onClick={() => setIsModalOpen(true)}
+        >
+          프로필 이미지 선택
+        </button>
+        <Button type="submit">회원가입</Button>
       </form>
       <AnimatePresence>
         {isModalOpen && <ProfileModal setIsModalOpen={setIsModalOpen} />}
