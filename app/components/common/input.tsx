@@ -21,8 +21,7 @@ export default function Input({
       <input
         id={id}
         className={tm(
-          'w-full border border-primary rounded-lg py-3.5 px-2.5 min-w-[30px] text-primary placeholder:text-primary/70',
-          'sm:text-xl sm:py-[24px]'
+          'w-full border border-primary rounded-lg py-3.5 px-2.5 min-w-[30px] text-primary placeholder:text-primary/70'
         )}
         {...restProps}
       />

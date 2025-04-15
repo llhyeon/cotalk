@@ -36,7 +36,7 @@ export default function ProfileModal({ setIsModalOpen }: ProfileModalProps) {
   };
   return (
     <motion.div
-      className="fixed inset-0 bg-black/70 z-10 flex flex-col justify-center items-center"
+      className="fixed inset-0 bg-black/70 z-10 flex flex-col justify-center items-center max-w-[393px] mx-auto"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

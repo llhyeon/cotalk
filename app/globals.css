@@ -22,9 +22,16 @@
   --breakpoint-xs: 343px;
 }
 
+html {
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
 body {
   background: var(--background);
   font-family: Pretendard, 'sans-serif';
   font-size: var(--text-base);
-  margin-bottom: 40px;
+  width: 380px;
+  height: 788px;
 }
